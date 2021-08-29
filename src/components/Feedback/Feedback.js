@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import Statistics from '../Statistics/Statistics';
 export default class Feedback extends React.Component{
     state = {
   good: 0,
@@ -22,12 +23,8 @@ export default class Feedback extends React.Component{
                 <button type="button" onClick={this.handleIncrement}>Good </button>
                 <button type="button" onClick={this.handleIncrement}>Neutral</button>
                 <button type="button" onClick={this.handleIncrement}>Bad</button>
-                 <section>
-            <h2>Statistics</h2>
-            <span>Good: { this.state.good}</span>
-            <span>Neutral: </span>
-            <span>Bad: </span>
-                    </section>
+                
+            <Statistics good={this.state.good}/>
             </div>
            
         )
