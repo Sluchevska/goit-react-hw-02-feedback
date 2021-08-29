@@ -9,11 +9,9 @@ export default class Feedback extends React.Component{
 
     handleIncrement=()=>{
         this.setState(prevState => {
-           
-            return {
-
+                return {
                 good: prevState.good + 1,
-               
+             
             }
         })
     }
@@ -21,10 +19,17 @@ export default class Feedback extends React.Component{
         return (
             <div>
                 <h1>Please leave feedback</h1>
-                <button type="button" onClick={this.handleIncrement}>Good { this.state.good}</button>
+                <button type="button" onClick={this.handleIncrement}>Good </button>
                 <button type="button" onClick={this.handleIncrement}>Neutral</button>
                 <button type="button" onClick={this.handleIncrement}>Bad</button>
+                 <section>
+            <h2>Statistics</h2>
+            <span>Good: { this.state.good}</span>
+            <span>Neutral: </span>
+            <span>Bad: </span>
+                    </section>
             </div>
+           
         )
     }
 }
