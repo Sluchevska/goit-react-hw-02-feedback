@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Feedback />
-      {/* <Statistics/> */}
+     
     </div>
   );
 }

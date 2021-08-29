@@ -2,13 +2,17 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Statistics from '../Statistics/Statistics';
 export default class Feedback extends React.Component{
+    
     state = {
   good: 0,
   neutral: 0,
   bad: 0
-}
+    }
+   
+    
 
-    handleIncrement=()=>{
+    handleIncrement = () => {
+    
         this.setState(prevState => {
                 return {
                 good: prevState.good + 1,
@@ -17,6 +21,7 @@ export default class Feedback extends React.Component{
         })
     }
     render() {
+       
         return (
             <div>
                 <h1>Please leave feedback</h1>
