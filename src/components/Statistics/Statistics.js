@@ -1,11 +1,11 @@
-export default function Statistics({good}) {
+export default function Statistics({good, neutral, bad}) {
     return (
        
         <section>
-            <h2>Statistics</h2>
-           <span>Good: { good}</span>
-            <span>Neutral: </span>
-            <span>Bad: </span>
+           
+           <span>Good: { good} </span>
+            <span>Neutral: { neutral} </span>
+            <span>Bad: { bad} </span>
                     </section>
     )
 }
