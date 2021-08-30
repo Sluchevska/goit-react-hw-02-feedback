@@ -16,23 +16,25 @@ class App extends React.Component{
          this.setState((prevState => ({
                 
             [e]: prevState[e] + 1
-          
-               
-             
-            
+         
         })))
-    }
+       }
+  countTotalFeedback = () => {
+     const { good, neutral, bad } = this.state
+    console.log(good+neutral+bad)
+    return    good+neutral+bad
+  }
   render() {
     const { good, neutral, bad } = this.state
-    const options = Object.keys(this.state)
-       
+      
         return (
           <div>
              <h1>Please leave feedback</h1>
-            <Feedback options={options} handleIncrement={ this.handleIncrement}/>
+            <Feedback options={Object.keys(this.state)} handleIncrement={this.handleIncrement}/>
                <h2>Statistics</h2>  
-            <Statistics good={this.state.good} neutral={neutral} bad={ bad}/>
-            </div>
+            <Statistics good={good} neutral={neutral} bad={bad} total={ this.countTotalFeedback()}/>
+          </div>
+    
            
         )
     }
