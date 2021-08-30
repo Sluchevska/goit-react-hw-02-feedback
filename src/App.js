@@ -1,7 +1,8 @@
 import React from 'react';
-import Feedback from './components/Feedback/Feedback'
+import Feedback from './components/Feedback/FeedbackOptions'
 
 import Statistics from './components/Statistics/Statistics';
+import SectionTitle from './components/Feedback/SectionTitle/SectionTitle';
 import './App.css';
 
 class App extends React.Component{
@@ -34,10 +35,12 @@ return Math.round(good*100/(good+neutral+bad))
       
         return (
           <div>
-             <h1>Please leave feedback</h1>
+            <SectionTitle title='Please leave feedback'>
             <Feedback options={Object.keys(this.state)} handleIncrement={this.handleIncrement}/>
-               <h2>Statistics</h2>  
+            </SectionTitle>
+            <SectionTitle title='Statistics'>
             <Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positivePercentage={this.countPositiveFeedbackPercentage()}/>
+          </SectionTitle>
           </div>
     
            
