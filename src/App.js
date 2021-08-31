@@ -5,6 +5,7 @@ import Statistics from './components/Statistics/Statistics';
 
 import SectionTitle from './components/SectionTitle/SectionTitle';
 import Notification from './components/Notification/Notification';
+import {Container} from './App.styled'
 import './App.css';
 
 
@@ -38,7 +39,7 @@ return Math.round(good*100/(good+neutral+bad))
     const totalFeedback = good+neutral+bad
       
         return (
-          <div>
+          <Container>
             <SectionTitle title='Please leave feedback'>
             <Feedback options={Object.keys(this.state)} handleIncrement={this.handleIncrement}/>
             </SectionTitle>
@@ -49,7 +50,7 @@ return Math.round(good*100/(good+neutral+bad))
                   positivePercentage={this.countPositiveFeedbackPercentage()}/> : <Notification message="No feedback given" />}
             
           </SectionTitle>
-          </div>
+          </Container>
     
            
         )

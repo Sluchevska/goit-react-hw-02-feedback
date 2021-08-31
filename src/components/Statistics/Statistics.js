@@ -1,22 +1,24 @@
 import PropTypes from 'prop-types';
+import { StatSection } from './Statistics.styled';
+import { Container } from './Statistics.styled';
 export default function Statistics({ good, neutral, bad, total, positivePercentage }) {
     
     return (
-       <div>
+       <Container>
          
             {
               
                 total > 0 && (
                   
-                <section>
+                <StatSection>
                     <span>Good: {good} </span>
             <span>Neutral: { neutral} </span>
             <span>Bad: {bad} </span>
             <span>Total: {total} </span>
                     <span>PositivePercentage: {positivePercentage}% </span>
-                </section>)
+                </StatSection>)
         }
-       </div>   
+       </Container>   
                   
     )
 }
