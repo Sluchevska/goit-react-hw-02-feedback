@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-export default function Feedback({ options, handleIncrement }) {
+export default function FeedbackOptions({ options, handleIncrement }) {
    
     return options.map((option) =>(
                 
@@ -12,4 +12,8 @@ export default function Feedback({ options, handleIncrement }) {
          
          
     
+}
+FeedbackOptions.propTypes = {
+    options: PropTypes.number,
+    handleIncrement: PropTypes.func
 }
