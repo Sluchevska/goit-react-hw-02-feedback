@@ -7,6 +7,7 @@ import SectionTitle from './components/SectionTitle/SectionTitle';
 import Notification from './components/Notification/Notification';
 import './App.css';
 
+
 class App extends React.Component{
     
     state = {
