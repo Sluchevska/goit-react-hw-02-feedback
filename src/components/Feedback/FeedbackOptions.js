@@ -14,6 +14,6 @@ export default function FeedbackOptions({ options, handleIncrement }) {
     
 }
 FeedbackOptions.propTypes = {
-    options: PropTypes.number,
+    options: PropTypes.array,
     handleIncrement: PropTypes.func
 }

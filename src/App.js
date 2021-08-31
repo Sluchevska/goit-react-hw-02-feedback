@@ -2,7 +2,7 @@ import React from 'react';
 import Feedback from './components/Feedback/FeedbackOptions'
 
 import Statistics from './components/Statistics/Statistics';
-import SectionTitle from './components/Feedback/SectionTitle/SectionTitle';
+import SectionTitle from './components/SectionTitle/SectionTitle';
 import './App.css';
 
 class App extends React.Component{
