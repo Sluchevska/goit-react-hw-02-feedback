@@ -1,4 +1,5 @@
-export default function SectionTitle({title,children}) {
+import PropTypes from 'prop-types';
+export default function SectionTitle({ title, children }) {
     return (
        <section>
           
