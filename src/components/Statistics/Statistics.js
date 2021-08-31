@@ -16,7 +16,7 @@ export default function Statistics({ good, neutral, bad, total, positivePercenta
             <Span>Neutral: { neutral} </Span>
             <Span>Bad: {bad} </Span>
             <Span>Total: {total} </Span>
-                    <Span>PositivePercentage: {positivePercentage}% </Span>
+                    <Span>Positive Feedback: {positivePercentage}% </Span>
                 </StatSection>)
         }
        </Container>   
