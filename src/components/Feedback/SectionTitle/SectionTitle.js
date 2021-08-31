@@ -8,3 +8,9 @@ export default function SectionTitle({ title, children }) {
          </section>    
     )
 }
+
+
+SectionTitle.propTypes = {
+    title: PropTypes.array.isRequired,
+    children: PropTypes.element.isRequired
+}
