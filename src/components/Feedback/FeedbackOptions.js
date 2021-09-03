@@ -8,7 +8,7 @@ export default function FeedbackOptions({ options, handleIncrement }) {
    
     return options.map((option) =>(
                 
-                <Buttons type="button" key={option} onClick={()=>handleIncrement(option)} > {option} </Buttons>
+                <Buttons type="button" key={option} onClick={()=>handleIncrement(option)} > {option.toUpperCase()} </Buttons>
             ))
          
          

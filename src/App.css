@@ -1,3 +1,10 @@
+body {
+  background-image: linear-gradient(
+      rgba(205, 208, 248, 0.7),
+      rgba(205, 208, 248, 0.7)
+    ),
+    url(../src/components/BkG/R.jpg);
+}
 .App {
   text-align: center;
 }
