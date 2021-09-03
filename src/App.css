@@ -1,7 +1,7 @@
 body {
   background-image: linear-gradient(
-      rgba(205, 208, 248, 0.7),
-      rgba(205, 208, 248, 0.7)
+      rgba(239, 239, 247, 0.7),
+      rgba(239, 239, 247, 0.7)
     ),
     url(../src/components/BkG/R.jpg);
 }
