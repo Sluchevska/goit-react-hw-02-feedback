@@ -41,7 +41,7 @@ return Math.round(good*100/(good+neutral+bad))
         return (
           <Container>
             <SectionTitle title='Please leave feedback'>
-            <Feedback options={Object.keys(this.state)} handleIncrement={this.handleIncrement}/>
+            <Feedback options={['good','neutral', 'bad']} handleIncrement={this.handleIncrement}/>
             </SectionTitle>
             <SectionTitle title='Statistics'>
               {totalFeedback > 0 ?
