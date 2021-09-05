@@ -1,5 +1,5 @@
 import React from 'react';
-import Feedback from '../Feedback/FeedbackOptions';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
 
 import Statistics from '../Statistics/Statistics';
 
@@ -14,7 +14,7 @@ class App extends React.Component {
     neutral: 0,
     bad: 0,
   };
-  handleIncrement = e => {
+  onLeaveFeedback = e => {
     this.setState(prevState => ({
       [e]: prevState[e] + 1,
     }));
@@ -36,9 +36,9 @@ class App extends React.Component {
     return (
       <Container>
         <SectionTitle title="Please leave feedback">
-          <Feedback
+          <FeedbackOptions
             options={['good', 'neutral', 'bad']}
-            handleIncrement={this.handleIncrement}
+            onLeaveFeedback={this.onLeaveFeedback}
           />
         </SectionTitle>
         <SectionTitle title="Statistics">

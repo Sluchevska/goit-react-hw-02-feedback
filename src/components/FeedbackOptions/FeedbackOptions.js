@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Buttons } from './FeedbackOptions.styled';
 
-export default function FeedbackOptions({ options, handleIncrement }) {
+export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return options.map(option => (
-    <Buttons type="button" key={option} onClick={() => handleIncrement(option)}>
+    <Buttons type="button" key={option} onClick={() => onLeaveFeedback(option)}>
       {' '}
       {option.toUpperCase()}{' '}
     </Buttons>
