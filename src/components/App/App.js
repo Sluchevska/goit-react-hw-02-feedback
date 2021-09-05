@@ -1,8 +1,6 @@
 import React from 'react';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-
 import Statistics from '../Statistics/Statistics';
-
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Notification from '../Notification/Notification';
 import { Container } from './App.styled';
