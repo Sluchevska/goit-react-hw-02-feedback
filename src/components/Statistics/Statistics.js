@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { StatSection } from './Statistics.styled';
 import { Container } from './Statistics.styled';
-import { Span } from './Statistics.styled';
+import { Li, Ul } from './Statistics.styled';
 
 export default function Statistics({
   good,
@@ -14,11 +14,14 @@ export default function Statistics({
     <Container>
       {
         <StatSection>
-          <Span>Good: {good} </Span>
-          <Span>Neutral: {neutral} </Span>
-          <Span>Bad: {bad} </Span>
-          <Span>Total: {total} </Span>
-          <Span>Positive Feedback: {positivePercentage}% </Span>
+          <Ul>
+
+          <Li>Good: {good} </Li>
+          <Li>Neutral: {neutral} </Li>
+          <Li>Bad: {bad} </Li>
+          <Li>Total: {total} </Li>
+          <Li>Positive Feedback: {positivePercentage}% </Li>
+          </Ul>
         </StatSection>
       }
     </Container>
